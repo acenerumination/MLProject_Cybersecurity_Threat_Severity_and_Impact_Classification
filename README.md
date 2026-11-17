@@ -6,12 +6,12 @@ Proyecto de aula del curso **Modelos y Simulación de Sistemas II** — Departam
 
 ## Estructura del repositorio
 
-|Archivo|Descripción|
-|---|---|
-|`DEF_projectModelosII.ipynb`|**Notebook principal y oficial para reproducir todos los resultados del informe final.** Integra el EDA y preprocesamiento (Entregable I), el entrenamiento y evaluación de los 5 modelos (Sección 1), análisis de sensibilidad al balance de clases y prueba de estrés bajo desbalance artificial, reducción de dimensión con PCA y UMAP (Sección 2), y conclusiones generadas dinámicamente a partir de las variables calculadas.|
-|`Entregable_Final.pdf`|Informe final (formato IEEE) que integra los Entregables I y II: descripción del problema, estado del arte, entrenamiento y evaluación de modelos, reducción de dimensión, discusión y conclusiones.|
-|`requirements.txt`|Dependencias con las versiones usadas para generar los resultados.|
-|`README.md`|Este archivo.|
+| Archivo                      | Descripción                                                                                                                                                                                                                                                                                                                                                                                |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `DEF_projectModelosII.ipynb` | **Notebook principal y oficial para reproducir todos los resultados del informe final.** Integra el EDA y preprocesamiento (Entregable I), el entrenamiento y evaluación de los 5 modelos (Sección 1), análisis de sensibilidad al balance de clases y prueba de estrés bajo desbalance artificial, reducción de dimensión con PCA y UMAP (Sección 2), y conclusiones generadas dinámicamente a partir de las variables calculadas. |
+| `Entregable_Final.pdf`       | Informe final (formato IEEE) que integra los Entregables I y II: descripción del problema, estado del arte, entrenamiento y evaluación de modelos, reducción de dimensión, discusión y conclusiones.                                                                                                                                                                                       |
+| `requirements.txt`           | Dependencias con las versiones usadas para generar los resultados.                                                                                                                                                                                                                                                                                                                                                                              |
+| `README.md` | Este archivo. |
 
 ## Dataset
 
@@ -47,7 +47,7 @@ Si `kagglehub` no está instalado o falla la descarga automática, el notebook i
 
 ### 4. Ejecutar el notebook
 
-Abrir `DEF_projectModelosII.ipynb` y ejecutar las celdas en orden (de arriba hacia abajo). Es el notebook oficial del proyecto y reproduce, en un solo flujo, todos los resultados reportados en el informe final:
+Abrir [`DEF_projectModelosII.ipynb`](DEF_projectModelosII.ipynb) y ejecutar las celdas en orden (de arriba hacia abajo). Es el notebook oficial del proyecto y reproduce, en un solo flujo, todos los resultados reportados en el informe final:
 
 1. **EDA y preprocesamiento (Entregable I):** carga y verificación de la base de datos, análisis exploratorio, diagnóstico de calidad (faltantes, duplicados), construcción de la variable objetivo `Severity` (Low/Medium/High), codificación (One-Hot Encoding) y estandarización (Z-score ajustada solo sobre entrenamiento).
 2. **Entrenamiento y evaluación de modelos (Sección 1, Entregable II):** validación cruzada estratificada K=5, malla de hiperparámetros para 5 familias de modelos (regresión logística, KNN, Random Forest, MLP y SVM), métricas con intervalos de confianza, y análisis de sensibilidad al balance de clases con prueba de estrés bajo desbalance artificial.
@@ -57,7 +57,7 @@ La ejecución completa tarda varios minutos (la malla de 51 configuraciones, la 
 
 ## Informe
 
-El reporte final, que integra los Entregables I y II siguiendo la plantilla IEEE, se encuentra en `Entregable_Final.pdf`.
+El reporte final, que integra los Entregables I y II siguiendo la plantilla IEEE, se encuentra en [`Entregable_Final.pdf`](Entregable_Final.pdf).
 
 ## Equipo
 
