@@ -6,13 +6,11 @@ Proyecto de aula del curso **Modelos y Simulación de Sistemas II** — Departam
 
 ## Estructura del repositorio
 
-| Archivo | Descripción |
-|---|---|
-| `DEF_projectModelosII.ipynb` | **Notebook principal y oficial para reproducir todos los resultados del informe final.** Integra el EDA del Entregable I con el desarrollo completo del Entregable II: entrenamiento y evaluación de los 5 modelos (Sección 1), análisis de sensibilidad al balance de clases y prueba de estrés bajo desbalance artificial, reducción de dimensión con PCA y UMAP (Sección 2), y conclusiones generadas dinámicamente a partir de las variables calculadas. |
-| `EDA_Cybersecurity_Threats.ipynb` | Notebook del Entregable I: análisis exploratorio de datos (EDA), diagnóstico de calidad, estrategia de imputación/codificación y preprocesamiento (One-Hot Encoding, estandarización Z-score). Su contenido está incorporado en `DEF_projectModelosII.ipynb`. |
-| `Entregable2_Cybersecurity_Threats.ipynb` | Versión intermedia del Entregable II (entrenamiento/evaluación de modelos y reducción de dimensión), previa a las mejoras incorporadas en `DEF_projectModelosII.ipynb` (p. ej. el análisis de sensibilidad al desbalance de clases). Se conserva como referencia del proceso iterativo del proyecto. |
-| `Entregable_Final.pdf` | Informe final (formato IEEE) que integra los Entregables I y II: descripción del problema, estado del arte, entrenamiento y evaluación de modelos, reducción de dimensión, discusión y conclusiones. |
-| `README.md` | Este archivo. |
+| Archivo                      | Descripción                                                                                                                                                                                                                                                                                                                                                                                |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `DEF_projectModelosII.ipynb` | **Notebook principal y oficial para reproducir todos los resultados del informe final.** Integra el  entrenamiento y evaluación de los 5 modelos (Sección 1), análisis de sensibilidad al balance de clases y prueba de estrés bajo desbalance artificial, reducción de dimensión con PCA y UMAP (Sección 2), y conclusiones generadas dinámicamente a partir de las variables calculadas. |
+| `Entregable_Final.pdf`       | Informe final (formato IEEE) que integra los Entregables I y II: descripción del problema, estado del arte, entrenamiento y evaluación de modelos, reducción de dimensión, discusión y conclusiones.                                                                                                                                                                                       |
+| `README.md`                  | Este archivo.                                                                                                                                                                                                                                                                                                                                                                              |
 
 ## Dataset
 
@@ -28,7 +26,7 @@ Se utiliza la base de datos pública [Global Cybersecurity Threats (2015-2024)](
 ### 2. Instalar dependencias
 
 ```bash
-pip install numpy pandas matplotlib seaborn scikit-learn kagglehub
+pip install -r requirements.txt
 ```
 
 ### 3. Carga del dataset
